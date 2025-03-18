@@ -1,6 +1,4 @@
-﻿using Beauty_salon.Components;
-using Beauty_salon.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Beauty_salon
+namespace Beauty_salon.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для EmptyPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EmptyPage : Page
     {
-        public MainWindow()
+        public EmptyPage()
         {
             InitializeComponent();
-            Navigations.mainWindow = this;
-            Navigations.NextMainPage(new AutharizationPage());
         }
     }
 }

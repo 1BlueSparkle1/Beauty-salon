@@ -15,5 +15,6 @@ namespace Beauty_salon
     public partial class App : Application
     {
         public static Beauty_salonEntities db = new Beauty_salonEntities();
+        public static User thisUser = new User();
     }
 }

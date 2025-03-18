@@ -6,8 +6,31 @@
         xmlns:local="clr-namespace:Beauty_salon"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Шарм и Стиль" Height="450" Width="800">
+        Title="Шарм и Стиль" Height="600" Width="1000">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="403*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="247*"/>
+        </Grid.RowDefinitions>
+
         
+
+        <Frame x:Name="TopFrame" Grid.ColumnSpan="2" Background="#FFF9BEEE" NavigationUIVisibility="Hidden"></Frame>
+
+        <Frame x:Name="LeftFrame" Grid.Row="1" Background="#FFF9BEEE" NavigationUIVisibility="Hidden"></Frame>
+
+        <Frame x:Name="CenterFrame" Grid.Column="1" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+
+        <Frame x:Name="MainFrame" Grid.ColumnSpan="2" Grid.RowSpan="2" NavigationUIVisibility="Hidden"></Frame>
+
+        <StackPanel Orientation="Horizontal">
+            <Image Source="/Resources/logo.png"></Image>
+            <TextBlock Margin="5" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Foreground="#FFDD057F">Салон <LineBreak></LineBreak> красоты</TextBlock>
+        </StackPanel>
+
     </Grid>
 </Window>

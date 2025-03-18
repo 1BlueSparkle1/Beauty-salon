@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Beauty_salon.Components.UserControls.ServiceUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Beauty_salon.Components.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="770">
+    <Border BorderBrush="#FFDD057F" BorderThickness="1" Width="700" Height="210" Margin="35 20">
+        <Grid>
+            <StackPanel>
+                <TextBlock x:Name="TitleTb" FontSize="25" FontWeight="Bold" Foreground="#FFDD057F">Название</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>Длительность:</TextBlock>
+                    <TextBlock x:Name="TimeTb"></TextBlock>
+                </StackPanel>
+                <TextBlock x:Name="SaleTb">какая скидка</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>Стоимость:</TextBlock>
+                    <TextBlock x:Name="PriseDoTb" FontSize="12" VerticalAlignment="Bottom" TextDecorations="Strikethrough">стоимость до</TextBlock>
+                    <TextBlock x:Name="PricePoTb" VerticalAlignment="Bottom" Foreground="Green">стоимость после</TextBlock>
+                </StackPanel>
+                <TextBlock>Материалы:</TextBlock>
+                <TextBlock x:Name="MaterialsTb" Width="680" HorizontalAlignment="Left" TextWrapping="Wrap">Материалы</TextBlock>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                <Button x:Name="OrderBtn" Background="#FFDD057F" Foreground="White" Click="OrderBtn_Click">Записаться</Button>
+                <Button x:Name="EditBtn" Background="#FFDD057F" Foreground="White" Click="EditBtn_Click">Редактировать</Button>
+                <Button x:Name="DeleteBtn" Background="#FFDD057F" Foreground="White" Click="DeleteBtn_Click">Удалить</Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>
