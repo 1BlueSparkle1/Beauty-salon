@@ -52,6 +52,11 @@ namespace Beauty_salon.Pages
                     Navigations.NextMainPage(new EmptyPage());
                     Navigations.NextLeftPage(new LeftPage());
                     Navigations.NextTopPage(new TopPage());
+                    Navigations.NextCenterPage(new EmptyPage());
+                    if (employees.First().SpecializationId == 1)
+                    {
+                        Navigations.NextCenterPage(new ListServicePage());
+                    }
                 }
                 else if (clients.Count() > 0)
                 {
@@ -64,7 +69,7 @@ namespace Beauty_salon.Pages
                     {
                         clients.First().DiscountPercentage = (int)(date / 2) * 5;
                     }
-                    
+                    App.db.SaveChanges();
                     Navigations.NextMainPage(new EmptyPage());
                     Navigations.NextLeftPage(new LeftPage());
                     Navigations.NextTopPage(new TopPage());

@@ -14,14 +14,15 @@
                     <TextBlock>Длительность:</TextBlock>
                     <TextBlock x:Name="TimeTb"></TextBlock>
                 </StackPanel>
-                <TextBlock x:Name="SaleTb">какая скидка</TextBlock>
+                <TextBlock x:Name="SaleTb" Margin="5,5,5,0" Foreground="#FFDD057F" FontSize="12">какая скидка</TextBlock>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock>Стоимость:</TextBlock>
-                    <TextBlock x:Name="PriseDoTb" FontSize="12" VerticalAlignment="Bottom" TextDecorations="Strikethrough">стоимость до</TextBlock>
-                    <TextBlock x:Name="PricePoTb" VerticalAlignment="Bottom" Foreground="Green">стоимость после</TextBlock>
+                    <TextBlock Margin="5,0,5,5">Стоимость:</TextBlock>
+                    <TextBlock x:Name="PriceDoTb" FontSize="12" VerticalAlignment="Bottom" TextDecorations="Strikethrough" Margin="5,0,5,5">стоимость до</TextBlock>
+                    <TextBlock x:Name="PricePoTb" VerticalAlignment="Bottom" Foreground="Green" Margin="5,0,5,5">стоимость после</TextBlock>
+                    <TextBlock Margin="5,0,5,5">руб.</TextBlock>
                 </StackPanel>
                 <TextBlock>Материалы:</TextBlock>
-                <TextBlock x:Name="MaterialsTb" Width="680" HorizontalAlignment="Left" TextWrapping="Wrap">Материалы</TextBlock>
+                <TextBlock x:Name="MaterialsTb" Width="550" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
             </StackPanel>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right">
                 <Button x:Name="OrderBtn" Background="#FFDD057F" Foreground="White" Click="OrderBtn_Click">Записаться</Button>

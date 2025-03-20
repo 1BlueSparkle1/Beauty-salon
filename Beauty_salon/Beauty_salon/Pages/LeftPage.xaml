@@ -11,6 +11,7 @@
     <Grid >
         <StackPanel x:Name="ClientSp">
             <Button x:Name="MessageBtn" Background="#FFDD057F" Foreground="White" Click="MessageBtn_Click">Сообщения</Button>
+            <Button x:Name="OrderBtn" Background="#FFDD057F" Foreground="White">Записи</Button>
             <Button x:Name="FeedbackBtn" Background="#FFDD057F" Foreground="White" Click="FeedbackBtn_Click">Отзывы</Button>
         </StackPanel>
         <Button x:Name="ExitBtn" VerticalAlignment="Bottom" Background="#FFDD057F" Foreground="White" Click="ExitBtn_Click">Выход</Button>
