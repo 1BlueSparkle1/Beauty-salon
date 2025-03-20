@@ -56,5 +56,15 @@ namespace Beauty_salon.Pages
             App.thisUser = new User();
             Navigations.NextMainPage(new AutharizationPage());
         }
+
+        private void ServiceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigations.NextCenterPage(new ListServicePage());
+        }
+
+        private void OrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

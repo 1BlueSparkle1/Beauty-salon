@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Beauty_salon.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace Beauty_salon.Pages
 
         private void ProfileBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigations.NextCenterPage(new ProfilePage(App.thisUser));
         }
     }
 }

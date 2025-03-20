@@ -31,7 +31,7 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                     <TextBlock>Телефон:</TextBlock>
-                    <TextBox x:Name="PhoneTb" MaxLength="11"></TextBox>
+                    <TextBox x:Name="PhoneTb" MaxLength="11" PreviewTextInput="PhoneTb_PreviewTextInput"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                     <TextBlock>Логин:</TextBlock>
