@@ -121,7 +121,7 @@ namespace Beauty_salon.Pages
 
         private void MaterialBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigations.NextCenterPage(new ListMaterialPage());
         }
     }
 }

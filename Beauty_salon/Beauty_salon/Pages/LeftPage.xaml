@@ -26,7 +26,7 @@
             <Button x:Name="FeedbackAdmBtn" Background="#FFDD057F" Foreground="White" Click="FeedbackAdmBtn_Click">Отзывы</Button>
             <Button x:Name="ScheduleAdmBtn" Background="#FFDD057F" Foreground="White" Click="ScheduleAdmBtn_Click">Расписание</Button>
             <Button x:Name="MaterialBtn" Background="#FFDD057F" Foreground="White" Click="MaterialBtn_Click">Материалы</Button>
-            <Button x:Name="CourseBtn" Background="#FFDD057F" Foreground="White" Click="CourseBtn_Click">Курсы</Button>
+            <Button x:Name="CourseBtn" Background="#FFDD057F" Foreground="White" Click="CourseBtn_Click">Сотрудники</Button>
             <Button x:Name="ReportBtn" Background="#FFDD057F" Foreground="White" Click="ReportBtn_Click">Отчеты</Button>
         </StackPanel>
         <Button x:Name="ExitBtn" VerticalAlignment="Bottom" Background="#FFDD057F" Foreground="White" Click="ExitBtn_Click">Выход</Button>

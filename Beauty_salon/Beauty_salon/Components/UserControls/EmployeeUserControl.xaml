@@ -10,8 +10,8 @@
         <Grid>
             <StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock>ФИО:</TextBlock>
-                    <TextBlock x:Name="FioTb"></TextBlock>
+                    <TextBlock Foreground="#FFDD057F" FontWeight="Bold">ФИО:</TextBlock>
+                    <TextBlock x:Name="FioTb" Foreground="#FFDD057F" FontWeight="Bold"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock>Возраст:</TextBlock>
