@@ -106,10 +106,20 @@ namespace Beauty_salon.Pages
 
         private void CourseBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigations.NextCenterPage(new ListEmployeePage());
         }
 
         private void ReportBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MessageAdmBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MaterialBtn_Click(object sender, RoutedEventArgs e)
         {
 
         }

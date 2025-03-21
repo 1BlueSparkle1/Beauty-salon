@@ -47,6 +47,10 @@ namespace Beauty_salon.Pages
                     string text = CourseTb.Text.Remove(CourseTb.Text.Count() - 2);
                     CourseTb.Text = text + ".";
                 }
+                else
+                {
+                    CourseTb.Text = "-";
+                }
             }
             SaveBtn.Visibility = Visibility.Collapsed;
             SurnameTb.Text = user.Surname;

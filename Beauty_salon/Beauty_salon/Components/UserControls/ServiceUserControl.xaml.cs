@@ -68,6 +68,7 @@ namespace Beauty_salon.Components.UserControls
 
             if (App.thisUser.Client.Count > 0)
             {
+                DiscountBtn.Visibility = Visibility.Collapsed;
                 EditBtn.Visibility = Visibility.Collapsed;
                 DeleteBtn.Visibility = Visibility.Collapsed;
             }
@@ -101,6 +102,11 @@ namespace Beauty_salon.Components.UserControls
                 MessageBox.Show("Услуга удалена!");
                 Navigations.NextCenterPage(new ListServicePage());
             }
+        }
+
+        private void DiscountBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

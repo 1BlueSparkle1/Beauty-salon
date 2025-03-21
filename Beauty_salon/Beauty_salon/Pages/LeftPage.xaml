@@ -22,8 +22,10 @@
         </StackPanel>
         <StackPanel x:Name="AdminSp">
             <Button x:Name="ServiceAdmBtn" Background="#FFDD057F" Foreground="White" Click="ServiceAdmBtn_Click">Услуги</Button>
+            <Button x:Name="MessageAdmBtn" Background="#FFDD057F" Foreground="White" Click="MessageAdmBtn_Click" >Сообщения</Button>
             <Button x:Name="FeedbackAdmBtn" Background="#FFDD057F" Foreground="White" Click="FeedbackAdmBtn_Click">Отзывы</Button>
             <Button x:Name="ScheduleAdmBtn" Background="#FFDD057F" Foreground="White" Click="ScheduleAdmBtn_Click">Расписание</Button>
+            <Button x:Name="MaterialBtn" Background="#FFDD057F" Foreground="White" Click="MaterialBtn_Click">Материалы</Button>
             <Button x:Name="CourseBtn" Background="#FFDD057F" Foreground="White" Click="CourseBtn_Click">Курсы</Button>
             <Button x:Name="ReportBtn" Background="#FFDD057F" Foreground="White" Click="ReportBtn_Click">Отчеты</Button>
         </StackPanel>
