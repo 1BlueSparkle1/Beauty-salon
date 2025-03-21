@@ -26,17 +26,20 @@ namespace Beauty_salon.Pages
             InitializeComponent();
             if (App.thisUser.Client.Count() > 0)
             {
-
+                EmployeeSp.Visibility = Visibility.Collapsed;
+                AdminSp.Visibility = Visibility.Collapsed;
             }
             else
             {
                 if (App.thisUser.Employee.First().Specialization.Title == "Админ")
                 {
                     ClientSp.Visibility = Visibility.Collapsed;
+                    EmployeeSp.Visibility = Visibility.Collapsed;
                 }
                 else
                 {
                     ClientSp.Visibility = Visibility.Collapsed;
+                    AdminSp.Visibility = Visibility.Collapsed;
                 }
             }
         }
@@ -63,6 +66,50 @@ namespace Beauty_salon.Pages
         }
 
         private void OrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+
+        private void ScheduleBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MessageEmpBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OrderEmpBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+
+        private void ServiceAdmBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigations.NextCenterPage(new ListServicePage());
+        }
+
+        private void FeedbackAdmBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ScheduleAdmBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CourseBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ReportBtn_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -43,6 +43,13 @@ namespace Beauty_salon.Components.UserControls
                     PriceDoTb.Text = service.Price.ToString();
                     PricePoTb.Text = (service.Price - (service.Price / 100 * App.thisUser.Client.ToList().First().DiscountPercentage)).ToString();
                 }
+                else
+                {
+                    SaleTb.Visibility = Visibility.Collapsed;
+                    PriceDoTb.Visibility = Visibility.Collapsed;
+                    PricePoTb.Foreground = Brushes.Black;
+                    PricePoTb.Text = service.Price.ToString();
+                }
             }
             else
             {

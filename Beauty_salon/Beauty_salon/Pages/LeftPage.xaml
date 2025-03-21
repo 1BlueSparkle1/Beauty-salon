@@ -15,6 +15,18 @@
             <Button x:Name="OrderBtn" Background="#FFDD057F" Foreground="White" Click="OrderBtn_Click">Записи</Button>
             <Button x:Name="FeedbackBtn" Background="#FFDD057F" Foreground="White" Click="FeedbackBtn_Click">Отзывы</Button>
         </StackPanel>
+        <StackPanel x:Name="EmployeeSp">
+            <Button x:Name="ScheduleBtn" Background="#FFDD057F" Foreground="White" Click="ScheduleBtn_Click">Расписание</Button>
+            <Button x:Name="MessageEmpBtn" Background="#FFDD057F" Foreground="White" Click="MessageEmpBtn_Click">Сообщения</Button>
+            <Button x:Name="OrderEmpBtn" Background="#FFDD057F" Foreground="White" Click="OrderEmpBtn_Click">Записи</Button>
+        </StackPanel>
+        <StackPanel x:Name="AdminSp">
+            <Button x:Name="ServiceAdmBtn" Background="#FFDD057F" Foreground="White" Click="ServiceAdmBtn_Click">Услуги</Button>
+            <Button x:Name="FeedbackAdmBtn" Background="#FFDD057F" Foreground="White" Click="FeedbackAdmBtn_Click">Отзывы</Button>
+            <Button x:Name="ScheduleAdmBtn" Background="#FFDD057F" Foreground="White" Click="ScheduleAdmBtn_Click">Расписание</Button>
+            <Button x:Name="CourseBtn" Background="#FFDD057F" Foreground="White" Click="CourseBtn_Click">Курсы</Button>
+            <Button x:Name="ReportBtn" Background="#FFDD057F" Foreground="White" Click="ReportBtn_Click">Отчеты</Button>
+        </StackPanel>
         <Button x:Name="ExitBtn" VerticalAlignment="Bottom" Background="#FFDD057F" Foreground="White" Click="ExitBtn_Click">Выход</Button>
     </Grid>
 </Page>
