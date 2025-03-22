@@ -74,7 +74,7 @@ namespace Beauty_salon.Pages
 
         private void ScheduleBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigations.NextCenterPage(new ListSchedulePage());
         }
 
         private void MessageEmpBtn_Click(object sender, RoutedEventArgs e)
@@ -101,7 +101,7 @@ namespace Beauty_salon.Pages
 
         private void ScheduleAdmBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigations.NextCenterPage(new ListSchedulePage());
         }
 
         private void CourseBtn_Click(object sender, RoutedEventArgs e)
